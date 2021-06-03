@@ -46,6 +46,7 @@ inquirer
         'BSD 2-Clause "Simplified" or "FreeBSD" license',
         'GNU General Public License (GPL)',
         'GNU Library or "Lesser" General Public License (LGPL)',
+        'ISC',
         'MIT license',
         'Mozilla Public License 2.0',
         'Common Development and Distribution License',

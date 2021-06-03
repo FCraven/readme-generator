@@ -19,25 +19,23 @@ const generateMarkdown =(answers)=> {
 
   const splitDependencies = answers.dependencies.split(' ')
 
-      return `# Title
+  return `# ${answers.title}
+##### ${answers.description}
 ---
-### ${answers.title}
 
-# Description
----
-### ${answers.description}
 
-# Dependencies
----
-This applications uses the following dependencies:
+### Dependencies
 ${mdDependencyList(splitDependencies)}
-###
 
-# Installation
----
-### ${answers.installation}
 
-# License
+
+### Installation
+##### ${answers.installation}
+
+
+### Usage
+##### ${answers.usage}
+
 ---
 ![License Badge](https://img.shields.io/static/v1?label=License&message=${urlFriendly(answers.license)}&color=informational)
 

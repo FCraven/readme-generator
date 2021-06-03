@@ -1,24 +1,21 @@
-# Title
+# readme-generator
+##### A helper to make README writing a breeze.
 ---
-### Craftsman
 
-# Description
----
-### stuff
 
-# Dependencies
----
-This applications uses the following dependencies:
+### Dependencies
 - inquirer
-- chalk
 
-###
 
-# Installation
+
+
+### Installation
+##### npm i
+
+
+### Usage
+##### npm start
+
 ---
-### npm i
-
-# License
----
-![License Badge](https://img.shields.io/static/v1?label=License&message=Common%20Development%20and%20Distribution%20License&color=informational)
+![License Badge](https://img.shields.io/static/v1?label=License&message=ISC&color=informational)
 
