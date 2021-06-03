@@ -20,7 +20,7 @@ inquirer
     {
       type: 'input',
       name: 'dependencies',
-      message: 'Please list all dependencies=->',
+      message: 'Enter all dependencies separated by a space =->',
       validate: (answer)=> hasLength(answer)
     },
 

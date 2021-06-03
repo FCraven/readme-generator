@@ -6,7 +6,19 @@ const urlFriendly =(string)=> {
   return string.split(' ').join('%20')
 }
 
+const mdDependencyList =(array)=> {
+  const mdDependencyList = array.reduce((accum,el) => {
+    accum += `- ${el}\n`
+    return accum
+  },``)
+
+  return mdDependencyList
+}
+
 const generateMarkdown =(answers)=> {
+
+  const splitDependencies = answers.dependencies.split(' ')
+
       return `# Title
 ---
 ### ${answers.title}
@@ -17,6 +29,9 @@ const generateMarkdown =(answers)=> {
 
 # Dependencies
 ---
+This applications uses the following dependencies:
+${mdDependencyList(splitDependencies)}
+###
 
 # Installation
 ---
